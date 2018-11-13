@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CreatingMyTask">
+
+
+    <LinearLayout
+
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/creatingMyTaskTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="10dp"
+            android:paddingLeft="10dp"
+            android:background="@animator/edittextstyle"
+            android:hint ="Заголовок"
+            android:textColor="#222222"/>
+
+        <Spinner
+            android:autofillHints="Категорий"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="10dp"
+            android:paddingLeft="10dp"
+            android:background="@animator/edittextstyle"
+            />
+
+        <EditText
+            android:id="@+id/priceTaskTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="20dp"
+            android:paddingVertical="10dp"
+            android:paddingLeft="10dp"
+            android:background="@animator/edittextstyle"
+            android:hint = "Цена"/>
+
+        <LinearLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="25dp">
+
+            <ImageView
+                android:id="@+id/creatingMyTaskImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/photo"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:id="@+id/creatingMyTaskImageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Добавить фото"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp"
+                android:clickable="true"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000000"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Описание"
+            android:layout_marginHorizontal="25dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/descriptionMyTaskEditView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="10dp"
+            android:paddingVertical="25dp"
+            android:paddingLeft="10dp"
+            android:background="@animator/edittextstyle"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+        <Button
+            android:id="@+id/chooseWayOfPayingButton"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="25dp"
+            android:layout_height="wrap_content"
+            android:text="Выбор способа оплаты"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff"
+            android:background="@animator/buttonstyle"/>
+
+    </LinearLayout>
+</FrameLayout>

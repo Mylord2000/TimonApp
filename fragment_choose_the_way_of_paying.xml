@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ChooseTheWayOfPaying">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"  >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="С личного счета в приложений"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="20dp"
+            android:textSize="17dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:gravity="center_horizontal"
+            android:background="@animator/edittextstyle"
+            android:textColor="#222222"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C помощью терминалов Qiwi и Quickpay"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="20dp"
+            android:textSize="17dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingHorizontal="30dp"
+            android:gravity="center_horizontal"
+            android:background="@animator/edittextstyle"
+            android:textColor="#222222"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="С помощью мобильных операторов связи"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="30dp"
+            android:textSize="17dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:gravity="center_horizontal"
+            android:background="@animator/edittextstyle"
+            android:textColor="#222222"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="С помощью банковской карты"
+            android:layout_marginHorizontal="25dp"
+            android:onClick="onClick"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="20dp"
+            android:textSize="17dp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:background="@animator/edittextstyle"
+            android:textColor="#222222"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="25dp"
+            android:layout_height="wrap_content"
+            android:text="Опубликовать"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff"
+            android:background="@animator/buttonstyle"/>
+
+    </LinearLayout>
+</FrameLayout>
